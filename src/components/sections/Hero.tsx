@@ -164,7 +164,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute -right-2 top-[8%] hidden w-44 animate-float rounded-2xl bg-white p-2.5 shadow-[0_20px_50px_-20px_rgba(15,22,43,0.45)] sm:block lg:-right-6"
+            className="absolute -right-2 top-[8%] hidden w-44 animate-float rounded-2xl bg-white p-2.5 shadow-[0_20px_50px_-20px_rgba(15,22,43,0.45)] sm:block xl:-right-6"
             aria-hidden="true"
           >
             <div className="relative aspect-square overflow-hidden rounded-xl">
@@ -177,7 +177,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.65 }}
-            className="absolute -right-1 bottom-[14%] hidden items-center gap-3 rounded-2xl bg-navy p-2.5 pr-4 text-white shadow-xl sm:flex lg:-right-10"
+            className="absolute -right-1 bottom-[14%] hidden items-center gap-3 rounded-2xl bg-navy p-2.5 pr-4 text-white shadow-xl sm:flex xl:-right-10"
             aria-hidden="true"
           >
             <span className="relative h-12 w-12 overflow-hidden rounded-xl">

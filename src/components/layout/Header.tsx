@@ -94,15 +94,15 @@ export function Header() {
           <Logo className="h-10 w-auto lg:h-11" priority />
         </Link>
 
-        <nav aria-label={t.nav.mainNav} className="hidden xl:block">
-          <ul className="flex items-center gap-0.5">
+        <nav aria-label={t.nav.mainNav} className="hidden lg:block">
+          <ul className="flex items-center xl:gap-0.5">
             {items.slice(1).map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   aria-current={isActive(item.href) ? "page" : undefined}
-                  className={`relative rounded-full px-3 py-2 text-[0.9rem] font-semibold transition hover:bg-navy/5 ${
-                    isActive(item.href) ? "text-navy after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded after:bg-lime" : "text-navy/80 hover:text-navy"
+                  className={`relative whitespace-nowrap rounded-full px-2 py-2 text-[0.84rem] font-semibold transition hover:bg-navy/5 xl:px-3 xl:text-[0.9rem] ${
+                    isActive(item.href) ? "text-navy after:absolute after:inset-x-2 xl:after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded after:bg-lime" : "text-navy/80 hover:text-navy"
                   }`}
                 >
                   {item.label}
@@ -126,7 +126,7 @@ export function Header() {
             onClick={() => setMenuOpen(true)}
             aria-label={t.nav.openMenu}
             aria-expanded={menuOpen}
-            className="grid h-11 w-11 place-items-center rounded-full bg-navy text-white transition hover:bg-navy-700 xl:hidden"
+            className="grid h-11 w-11 place-items-center rounded-full bg-navy text-white transition hover:bg-navy-700 lg:hidden"
           >
             <Menu className="h-5 w-5" aria-hidden="true" />
           </button>
